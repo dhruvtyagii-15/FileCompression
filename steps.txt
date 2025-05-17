@@ -1,0 +1,89 @@
+1. Install Required Software
+a. Install Python (3.7+)
+Download: https://www.python.org/downloads/
+
+b. Install pip (Python package manager)
+Usually comes with Python. You can check:
+
+bash
+Copy
+Edit
+pip --version
+c. Install FFmpeg (for video compression)
+Windows:
+Download from https://ffmpeg.org/download.html
+Add the bin folder to your system's PATH.
+
+Linux:
+
+bash
+Copy
+Edit
+sudo apt update
+sudo apt install ffmpeg
+macOS:
+
+bash
+Copy
+Edit
+brew install ffmpeg
+✅ 2. Set Up the Project
+a. Download or clone the project files
+If you received a ZIP:
+
+Extract it to a folder, say compression_project.
+
+b. Open terminal/command prompt in that folder
+✅ 3. Install Python Dependencies
+In your terminal:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+This installs:
+
+Flask (web framework)
+
+Pillow (image handling)
+
+OpenCV (for potential video operations)
+
+✅ 4. Run the Flask Application
+In the same folder, run:
+
+bash
+Copy
+Edit
+python app.py
+You should see output like:
+
+csharp
+Copy
+Edit
+ * Running on http://127.0.0.1:5000/
+✅ 5. Open the Web Interface
+Open a browser and go to:
+
+cpp
+Copy
+Edit
+http://127.0.0.1:5000
+You’ll see the web page with:
+
+Compress Text
+
+Compress Image
+
+Compress Video
+
+✅ 6. Use the Application
+Click a button and upload a file:
+
+.txt for text
+
+.jpg, .png, etc. for images
+
+.mp4, .mov, etc. for video
+
+After upload, it compresses and starts downloading the output file automatically.
